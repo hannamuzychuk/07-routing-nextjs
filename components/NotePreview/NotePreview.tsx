@@ -1,3 +1,5 @@
+"use client"
+
 import { Note } from "@/types/note";
 import { useRouter } from "next/navigation";
 import css from "./NotePreview.module.css";
