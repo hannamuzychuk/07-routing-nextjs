@@ -2,7 +2,6 @@ import React from "react";
 
 export default function NotesLayout({
   children,
-  modal,
 }: {
   children: React.ReactNode;
   modal: React.ReactNode;
@@ -10,7 +9,6 @@ export default function NotesLayout({
   return (
     <>
       {children}
-      {modal}
     </>
   );
 }
