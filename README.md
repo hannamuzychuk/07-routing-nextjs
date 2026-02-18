@@ -32,7 +32,7 @@ To expand the Project Structure section based on your folder hierarchy, you can 
 🔗 Live Demo
 You can view the live version of the project here:
 
-NoteHub on Vercel (Note: Replace this with your actual deployment URL from the Vercel dashboard after your build is complete.)
+NoteHub on Vercel ((https://07-routing-nextjs-mtcf.vercel.app/))
 
 🛠 Deployment Steps on Vercel:
 Push your code to your GitHub repository.
