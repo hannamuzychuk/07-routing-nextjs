@@ -5,11 +5,11 @@ import { useRouter } from "next/navigation";
 import css from "./NotePreview.module.css";
 import Modal from "@/components/Modal/Modal";
 
-interface NotePreviewPops {
+interface NotePreviewProps {
   note: Note;
 }
 
-export default function NotePreview({ note }: NotePreviewPops) {
+export default function NotePreview({ note }: NotePreviewProps) {
   const router = useRouter();
 
   const date = new Date(note.updatedAt || note.createdAt)
