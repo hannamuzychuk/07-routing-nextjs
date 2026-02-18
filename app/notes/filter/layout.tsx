@@ -11,9 +11,11 @@ export default function FilterLayout({
   return (
     <div className={css.container}>
       <aside className={css.sidebar}>
-        {sidebar} 
+        {sidebar}
       </aside>
-      <section className={css.notesWrapper}>{children}</section>
+      <main className={css.notesWrapper}>
+        {children}
+      </main>
     </div>
   );
 }

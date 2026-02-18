@@ -1,5 +1,5 @@
 import Modal from "@/components/Modal/Modal";
-import NotePreview from "@/components/NotePreview/NotePreview";
+import NotePreview from "@/app/@modal/(.)notes/[id]/NotePreview.client";
 import { fetchNoteById } from "@/lib/api";
 import { notFound } from "next/navigation";
 
