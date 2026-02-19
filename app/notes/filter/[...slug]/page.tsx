@@ -8,14 +8,14 @@ import {
 import NotesClient from "./Notes.client";
 
 interface FilterPageProps {
-  params: { slug?: string[] };
+  params: Promise<{ slug: string[] }>;
 }
 
 export default async function FilterPage({ params }: FilterPageProps) {
-  const slug = params.slug || [];
+   const resolvedParams = await params;
+  const slug = resolvedParams.slug || [];
   const tag = slug[0] || "all";
 
-// const valueTag = tag === 'all' ? "" : tag;
 const activeTag = tag === "all" ? undefined : (tag as NoteTag);
   
   const queryClient = new QueryClient();
