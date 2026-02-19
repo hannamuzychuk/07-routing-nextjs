@@ -1,4 +1,4 @@
-import Modal from "@/components/Modal/Modal";
+// import Modal from "@/components/Modal/Modal";
 import NotePreview from "@/app/@modal/(.)notes/[id]/NotePreview.client";
 import { fetchNoteById } from "@/lib/api";
 import { notFound } from "next/navigation";
@@ -19,8 +19,6 @@ export default async function NoteModal({ params }: NoteModalProps) {
   }
 
   return (
-    <Modal>
       <NotePreview note={note} />
-    </Modal>
   );
 }
